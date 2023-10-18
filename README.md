@@ -1,24 +1,27 @@
 # unne_front_vue
 
-## Project setup
-```
+## PConfiguración del Proyecto
+
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
+### Generar entorno de desarrollo y producción
+
+cp .env.example .env
+cp .env.example .env.production
+
+Para esta api: VUE_APP_API_URL=http://localhost/api/v1
+
+### Compilar y recargar en caliente para desarrollo
+
 npm run serve
-```
 
-### Compiles and minifies for production
-```
+### Compilar y minimizar para producción
+
 npm run build
-```
 
 ### Run your unit tests
-```
+
 npm run test:unit
-```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

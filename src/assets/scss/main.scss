@@ -1,0 +1,191 @@
+@import './variables';
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+    margin-left: 0;
+    }
+
+    #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+    }
+}
+
+.list-group-item {
+    border: 0px !important;
+}
+
+.sidebar-heading, .sidebar-heading a{
+    background-color: $white !important;
+}
+
+.sidebar-heading {
+    -webkit-box-shadow: 0 4px 6px -6px $black !important;
+    -moz-box-shadow: 0 4px 6px -6px $black !important;
+    box-shadow: 0 4px 6px -6px $black !important;
+}
+
+.sidebar, .sidebar a{
+    background-color: $primary;
+}
+
+.sidebar a:hover{
+    background-color:  $secondary;
+}
+
+.sidebar a:focus{
+    background-color:  $secondary;
+}
+
+.navbar {
+    -webkit-box-shadow: 0 4px 6px -6px  $primary;
+    -moz-box-shadow: 0 4px 6px -6px  $primary;
+    box-shadow: 0 4px 6px -6px  $primary;
+}
+
+.access_button{
+    border-color:  $primary;
+    color:  $primary;
+    background-color: none;
+}
+
+.access_button:hover{
+    border-color:  $primary;
+    color: $white;
+    background-color:  $primary;
+}
+
+th{
+    background-color: $primary !important;
+    color: $white !important;
+}
+
+.actions > p {
+    margin-bottom: 2px !important;
+}
+
+.selects .col-md-1, .selects .col-md-2, .selects .col-md-3, .selects .col-md-4{
+    padding-right: 3px !important;
+    padding-left: 3px !important;
+}
+
+.selects .form-control, .selects .input-group-text {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.table_footer{
+    padding: 5px !important;
+}
+
+.btn-toggle{
+    background-color: $primary !important;
+    color:$white !important;
+}
+
+.btn-toggle:hover{
+    color:$white;
+}
+
+
+th > a{
+    color: $white !important;
+}
+
+.active > span{
+    color: $white !important;
+    background-color:  $primary !important;
+    border: none !important;
+}
+
+.active > a{
+    color: $white !important;
+    background-color: $primary !important;
+    border: none !important;
+}
+
+.page-link{
+    color: $black !important;
+}
+
+*{
+    font-size: 0.95rem;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+div.list-group > a {
+    font-size: 14px !important;
+    text-wrap: wrap;
+}
+
+.dropdown .list-group-item{
+    font-size: 14px !important;
+}
+
+.list-group-item {
+    font-size: 14px !important;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+div.list-group > a > i.fas{
+    font-size: 14px !important;
+}
+
+
+.dropdown > *, .dropdown-item {
+    font-size: 0.95rem !important;
+}
+
+.list-group .dropdown-menu{
+    background-color: $primary;
+    border: 1px solid $white;
+}
+
+
+.text-center th {
+    text-align: center !important;
+}
+
+/* Estilos personalizados para DataTables con Bootstrap 5 */
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_paginate {
+  text-align: left;
+}
+
+.dataTables_wrapper .row {
+    width: 100% !important;
+}
