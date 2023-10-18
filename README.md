@@ -1,6 +1,6 @@
 # unne_front_vue
 
-## PConfiguración del Proyecto
+## Configuración del Proyecto
 
 npm install
 
