@@ -7,6 +7,7 @@ npm install
 ### Generar entorno de desarrollo y producción
 
 cp .env.example .env
+
 cp .env.example .env.production
 
 Para el funcionamiento correcto de la aplicación es necesaria una variable de entorno VUE_APP_API_URL con la url de la api y la versión requerida, en este caso v1.
@@ -14,6 +15,7 @@ Para el funcionamiento correcto de la aplicación es necesaria una variable de e
 Por ejemplo: 
 
 VUE_APP_API_URL=http://localhost/api/v1
+
 VUE_APP_API_URL=http://localhost:8000/api/v1
 
 ### Compilar y recargar en caliente para desarrollo
@@ -24,9 +26,7 @@ npm run serve
 
 npm run build
 
-### Run your unit tests
+### Ejecutar tests
 
 npm run test:unit
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
